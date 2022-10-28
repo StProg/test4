@@ -2,9 +2,9 @@
   "name": "sap.m.sample.test4",
   "version": "1.0.0",
   "author": "SAP SE",
-  "description": "Sample: Planning Calendar - with appointments modification",
+  "description": "Team task calendar",
   "scripts": {
-    "start": "ui5 serve",
+    "start": "ui5 serve -o index.html",
     "build": "ui5 build"
   },
   "dependencies": {
