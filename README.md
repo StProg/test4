@@ -1,5 +1,5 @@
 
-# test4 1
+# test4
 > [OpenUI5](https://github.com/SAP/openui5) test app using the [UI5 Tooling](https://github.com/SAP/ui5-tooling).
 > ```
 > Made with WebStorm.
