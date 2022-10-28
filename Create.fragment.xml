@@ -1,0 +1,48 @@
+<core:FragmentDefinition
+		xmlns:l="sap.ui.layout"
+		xmlns:core="sap.ui.core"
+		xmlns="sap.m">
+	<Dialog id="createDialog">
+		<beginButton>
+			<Button text="Save" type="Emphasized" press="handleDialogSaveButton"/>
+		</beginButton>
+		<endButton>
+			<Button text="Cancel" press="handleDialogCancelButton"/>
+		</endButton>
+		<l:VerticalLayout
+			class="sapUiContentPadding"
+			width="100%">
+			<CheckBox id="isIntervalAppointment" text="Interval appointment" select="handleAppointmentTypeChange"/>
+			<Label text="Сотрудник: " labelFor="selectPerson"/>
+			<Select
+					id="selectPerson"
+					forceSelection="false"
+					change="handleChangeSelect"
+					width="100%"
+					items="{
+						path: '/people'
+					}">
+				<core:Item key="{name}" text="{name}"/>
+			</Select>
+			<Label text="Название: " labelFor="inputTitle"/>
+			<Input id="inputTitle"/>
+			<Label text="Дата начала: " labelFor="startDate"/>
+			<DateTimePicker
+					id="startDate"
+					displayFormat="short"
+					required="true"
+					change="handleCreateChange"/>
+			<!--Label text="End date: " labelFor="endDate"/-->
+			<DateTimePicker
+					id="endDate"
+					displayFormat="short"
+					required="true"
+					change="handleCreateChange"/>
+			<Input id="moreInfo"/>
+			<Label text="Трудоемкость ч/д: " labelFor="md"/>
+			<Input id="md"
+				   required="true"
+			/>
+		</l:VerticalLayout>
+	</Dialog>
+</core:FragmentDefinition>
