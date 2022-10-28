@@ -13,14 +13,15 @@
 				showEmptyIntervalHeaders="false"
 				intervalSelect="handleAppointmentAddWithContext">
 			<toolbarContent>
-				<Title text="Title" titleStyle="H4"/>
-				<Button id="addButton" icon="sap-icon://add" press="handleAppointmentCreate" tooltip="Add"/>
+				<Title text="Тестовое задание" titleStyle="H4"/>
+				<Button id="addButton" icon="sap-icon://add" press="handleAppointmentCreate" tooltip="Добавить задачу"/>
 			</toolbarContent>
 			<rows>
+				<!--icon="{pic}"
+                title="{name}"
+                text="{role}"-->
 				<PlanningCalendarRow
-						icon="{pic}"
 						title="{name}"
-						text="{role}"
 						enableAppointmentsDragAndDrop="{path:'name', formatter:'.canModifyAppointments'}"
 						enableAppointmentsResize="{path:'name', formatter:'.canModifyAppointments'}"
 						appointmentDrop="handleAppointmentDrop"
@@ -34,7 +35,7 @@
 								endDate="{end}"
 								icon="{pic}"
 								title="{title}"
-								text="{info}"
+								text="{info} : {md}ч/д"
 								type="{type}"
 								tentative="{tentative}">
 						</unified:CalendarAppointment>

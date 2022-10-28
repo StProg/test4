@@ -1,7 +1,8 @@
 <core:FragmentDefinition
 		xmlns:l="sap.ui.layout"
 		xmlns:core="sap.ui.core"
-		xmlns="sap.m">
+		xmlns="sap.m"
+		xmlns:C="sap.ui.webc.main.sample.StepInput.C">
 	<Dialog id="createDialog">
 		<beginButton>
 			<Button text="Save" type="Emphasized" press="handleDialogSaveButton"/>
@@ -36,13 +37,12 @@
 			<DateTimePicker
 					id="endDate"
 					displayFormat="short"
-					required="true"
+					required="false"
 					change="handleCreateChange"/>
 			<Input id="moreInfo"/>
 			<Label text="Трудоемкость ч/д: " labelFor="md"/>
-			<Input id="md"
-				   required="true"
-			/>
+			<Input id="md"/>
+			<!--StepInput id="md" placeholder="Enter number" step="0.1" valuePrecision="1" change="handleChange"></StepInput-->
 		</l:VerticalLayout>
 	</Dialog>
 </core:FragmentDefinition>

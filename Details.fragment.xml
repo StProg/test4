@@ -17,12 +17,14 @@
 				editable="false"
 				layout="ResponsiveGridLayout"
 				singleContainerFullSize="false">
-			<Label text="Additional information" labelFor="moreInfoText"/>
+			<Label text="Описание" labelFor="moreInfoText"/>
 			<Text id="moreInfoText" text="{info}"/>
-			<Label text="From" labelFor="startDateText"/>
+			<Label text="Начало" labelFor="startDateText"/>
 			<Text id="startDateText" text="{path: 'start', formatter: '.formatDate'}"/>
-			<Label text="To" labelFor="endDateText"/>
+			<Label text="Окончание" labelFor="endDateText"/>
 			<Text id="endDateText" text="{path: 'end', formatter: '.formatDate'}"/>
+			<Label text="Трудоемкость" labelFor="mdText"/>
+			<Text id="mdText" text="{md}ч/д"/>
 		</f:SimpleForm>
 	</ResponsivePopover>
 </core:FragmentDefinition>
