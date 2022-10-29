@@ -4,10 +4,6 @@
 > ```
 > Made with in help by WebStorm and Notepad++.
 
-## Prerequisites
-- The **UI5 CLI** of the [UI5 Tooling](https://github.com/SAP/ui5-tooling#installing-the-ui5-cli).
-    - For installation instructions please see: [Installing the UI5 CLI](https://github.com/SAP/ui5-tooling#installing-the-ui5-cli).
-
 ## Getting started
 1. Clone this repository and navigate into it
     ```sh
