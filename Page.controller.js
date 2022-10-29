@@ -453,11 +453,11 @@ sap.ui.define([
 				this.getView().setModel(oModel);
 				const taskData = {
 					"tasks":[
-						{"name":"Задача 1","md":"1,1","mdt":"ч/д","plained":""},
-						{"name":"Задача 2","md":"10,8","mdt":"ч/д","plained":""},
-						{"name":"Задача ","md":"4","mdt":"ч/д","plained":""},
-						{"name":"Задача 4","md":"5","mdt":"ч/д","plained":"Запланирована!"},
-						{"name":"Задача 5","md":"2","mdt":"ч/д","plained":""},
+						{"name":"20221028 Задача 1","md":"1,1","mdt":"ч/д","plained":""},
+						{"name":"20221029 Задача 2","md":"10,8","mdt":"ч/д","plained":""},
+						{"name":"20221030 Задача 3","md":"4","mdt":"ч/д","plained":""},
+						{"name":"20221031 Задача 4","md":"5","mdt":"ч/д","plained":"Запланирована!"},
+						{"name":"20221101 Задача 5","md":"2","mdt":"ч/д","plained":""},
 						]
 				};
 				this.getView().byId("tasks").setModel(new sap.ui.model.json.JSONModel(taskData));

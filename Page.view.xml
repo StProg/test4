@@ -15,15 +15,15 @@
 				intervalSelect="handleAppointmentAddWithContext">
 			<toolbarContent>
 				<Title text="Планировщик задач" titleStyle="H4"/>
-				<Select id="tasks" showSecondaryValues= "true" items="{ path: '/tasks' }">
-					<core:ListItem text="{name}" additionalText="{md}{mdt} {plained}"/>
-				</Select>
-<!--				<ComboBox id="tasks" open="true" showSecondaryValues= "true" items="{path: '/tasks',sorter: { path: 'name' }}">-->
-<!--					<core:ListItem key="{name}" text="{name}" additionalText = "{md}{mdt} {plained}"/>-->
-<!--				</ComboBox>-->
+<!--				<Select id="tasks" showSecondaryValues= "true" items="{ path: '/tasks' }">-->
+<!--					<core:ListItem text="{name}" additionalText="{md}{mdt} {plained}"/>-->
+<!--				</Select>-->
+				<ComboBox id="tasks" open="true" showSecondaryValues= "true" items="{path: '/tasks',sorter: { path: 'name' }}">
+					<core:ListItem key="{name}" text="{name}" additionalText = "{md}{mdt} {plained}"/>
+				</ComboBox>
 				<Button id="addTaskButton" icon="sap-icon://add" press="handleInDev" tooltip="Создать задачу"/>
 				<Button id="delTaskButton" icon="sap-icon://less" press="handleInDev" tooltip="Удалить задачу"/>
-				<Button id="plainTaskButton" icon="sap-icon://cause" press="handleAppointmentCreate" tooltip="Запланировать задачу" text="Запланировать"/>
+				<Button id="plainTaskButton" icon="sap-icon://cause" press="handleAppointmentCreate" tooltip="Запланировать задачу" text="Запланировать выбранную"/>
 			</toolbarContent>
 
 			<rows>
@@ -68,4 +68,7 @@
 		<Button id="delStaffButton" icon="sap-icon://less" press="handleInDev" tooltip="Исключить сотрудника"/>
 		</HeaderContainer>
 	</VBox>
+	<script>
+		alert('a');
+	</script>
 </mvc:View>
