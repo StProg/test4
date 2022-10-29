@@ -2,7 +2,7 @@
 # test4
 > [OpenUI5](https://github.com/SAP/openui5) test app using the [UI5 Tooling](https://github.com/SAP/ui5-tooling).
 > ```
-> Made with WebStorm.
+> Made with in help by WebStorm and Notepad++.
 
 ## Prerequisites
 - The **UI5 CLI** of the [UI5 Tooling](https://github.com/SAP/ui5-tooling#installing-the-ui5-cli).
