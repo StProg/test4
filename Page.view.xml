@@ -68,7 +68,4 @@
 		<Button id="delStaffButton" icon="sap-icon://less" press="handleInDev" tooltip="Исключить сотрудника"/>
 		</HeaderContainer>
 	</VBox>
-	<script>
-		alert('a');
-	</script>
 </mvc:View>
