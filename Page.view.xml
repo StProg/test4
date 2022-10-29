@@ -1,5 +1,6 @@
 <mvc:View
 		controllerName="sap.m.sample.test4.Page"
+		xmlns:core="sap.ui.core"
 		xmlns:mvc="sap.ui.core.mvc"
 		xmlns:unified="sap.ui.unified"
 		xmlns="sap.m">
@@ -13,9 +14,15 @@
 				showEmptyIntervalHeaders="false"
 				intervalSelect="handleAppointmentAddWithContext">
 			<toolbarContent>
-				<Title text="Тестовое задание" titleStyle="H4"/>
-				<Button id="addButton" icon="sap-icon://add" press="handleAppointmentCreate" tooltip="Добавить задачу"/>
+				<Title text="Планировщик задач" titleStyle="H4"/>
+				<ComboBox id="tasks" open="true" showSecondaryValues= "true" items="{path: '/tasks',sorter: { path: 'name' }}">
+					<core:ListItem key="{name}" text="{name}" additionalText = "{md}{mdt} {plained}"/>
+				</ComboBox>
+				<Button id="addTaskButton" icon="sap-icon://add" press="handleInDev" tooltip="Создать задачу"/>
+				<Button id="delTaskButton" icon="sap-icon://less" press="handleInDev" tooltip="Удалить задачу"/>
+				<Button id="plainTaskButton" icon="sap-icon://cause" press="handleAppointmentCreate" tooltip="Запланировать задачу" text="Запланировать"/>
 			</toolbarContent>
+
 			<rows>
 				<!--icon="{pic}"
                 title="{name}"
@@ -52,5 +59,10 @@
 				</PlanningCalendarRow>
 			</rows>
 		</PlanningCalendar>
+		<HeaderContainer  scrollStep="50" showDividers="false">
+			<Text text="Сотрудники" titleStyle="H4"/>
+		<Button id="addStaffButton" icon="sap-icon://add" press="handleInDev" tooltip="Добавить сотрудника"/>
+		<Button id="delStaffButton" icon="sap-icon://less" press="handleInDev" tooltip="Исключить сотрудника"/>
+		</HeaderContainer>
 	</VBox>
 </mvc:View>

@@ -451,11 +451,21 @@ sap.ui.define([
 					]
 				});
 				this.getView().setModel(oModel);
+				const taskData = {
+					"tasks":[
+						{"name":"Задача 1","md":"1,1","mdt":"ч/д","plained":""},
+						{"name":"Задача 2","md":"10,8","mdt":"ч/д","plained":""},
+						{"name":"Задача ","md":"4","mdt":"ч/д","plained":""},
+						{"name":"Задача 4","md":"5","mdt":"ч/д","plained":"Запланирована!"},
+						{"name":"Задача 5","md":"2","mdt":"ч/д","plained":""},
+						]
+				};
+				this.getView().byId("tasks").setModel(new sap.ui.model.json.JSONModel(taskData));
 			},
 
 			_aDialogTypes: [
-				{ title: "Создать задачу", type: "create_appointment" },
-				{ title: "Создать задачу", type: "create_appointment_with_context"},
+				{ title: "Запланировать задачу", type: "create_appointment" },
+				{ title: "Запланировать задачу", type: "create_appointment_with_context"},
 				{ title: "Редактировать задачу", type: "edit_appointment" }],
 
 			handleAppointmentSelect: function (oEvent) {
@@ -500,9 +510,10 @@ sap.ui.define([
 				this._arrangeDialogFragment(this._aDialogTypes[1].type);
 			},
 
-			_validateDateTimePicker: function (oDateTimePickerStart, oDateTimePickerEnd) {
+			_validateDateTimePicker: function (oDateTimePickerStart, oDateTimePickerEnd,oMdValue) {
 				var oStartDate = oDateTimePickerStart.getDateValue(),
 					oEndDate = oDateTimePickerEnd.getDateValue(),
+					oMd = oMdValue.getValue(),
 					sValueStateText = "Дата начала должна быть раньше даты окончания";
 
 				if (oStartDate && oEndDate && oEndDate.getTime() <= oStartDate.getTime()) {
@@ -529,10 +540,11 @@ sap.ui.define([
 
 			handleCreateChange: function (oEvent) {
 				var oDateTimePickerStart = this.byId("startDate"),
-					oDateTimePickerEnd = this.byId("endDate");
+					oDateTimePickerEnd = this.byId("endDate"),
+					oMd = this.byId("md");
 
 				if (oEvent.getParameter("valid")) {
-					this._validateDateTimePicker(oDateTimePickerStart, oDateTimePickerEnd);
+					this._validateDateTimePicker(oDateTimePickerStart, oDateTimePickerEnd,oMd);
 				} else {
 					oEvent.getSource().setValueState(ValueState.Error);
 				}
@@ -1009,6 +1021,9 @@ sap.ui.define([
 				}
 
 				return bAppointmentOverlapped;
+			},
+			handleInDev: function (oEvent) {
+					MessageToast.show("Пока в разработке!");
 			}
 		});
 

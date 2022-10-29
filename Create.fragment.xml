@@ -37,11 +37,11 @@
 			<DateTimePicker
 					id="endDate"
 					displayFormat="short"
-					required="false"
+					required="true"
 					change="handleCreateChange"/>
-			<Input id="moreInfo"/>
+			<Input id="moreInfo" required="false"/>
 			<Label text="Трудоемкость ч/д: " labelFor="md"/>
-			<Input id="md"/>
+			<Input id="md" required="true"/>
 			<!--StepInput id="md" placeholder="Enter number" step="0.1" valuePrecision="1" change="handleChange"></StepInput-->
 		</l:VerticalLayout>
 	</Dialog>
