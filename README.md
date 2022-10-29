@@ -2,7 +2,7 @@
 # test4
 > [OpenUI5](https://github.com/SAP/openui5) test app using the [UI5 Tooling](https://github.com/SAP/ui5-tooling).
 > ```
-> Made with in help by WebStorm and Notepad++.
+> It has beet made with in help by WebStorm and Notepad++.
 
 ## Getting started
 1. Clone this repository and navigate into it
