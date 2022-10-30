@@ -4,7 +4,7 @@
   "author": "SAP SE",
   "description": "Team task calendar",
   "scripts": {
-    "start": "ui5 serve -o index.html",
+    "start": "cross-env OPENUI5_SRV_ACC_RMT_CON=true ui5 serve --accept-remote-connections -o index.html",
     "build": "ui5 build"
   },
   "dependencies": {
