@@ -18,227 +18,32 @@ sap.ui.define([
 			onInit: function () {
 				var oModel = new JSONModel();
 				oModel.setData({
-					startDate: new Date("2022", "0", "15", "8", "0"),
+					startDate: new Date("2022", "9", "31", "10", "0"),
 					people: [{
 						//pic: "test-resources/sap/ui/documentation/sdk/images/John_Miller.png",
 						name: "Алексей Астахов",
 						role: "admin",
 						appointments: [
 							{
-								md:"20,5",
-								start: new Date("2022", "09", "31", "08", "30"),
-								end: new Date("2022", "09", "8", "09", "30"),
-								title: "Meet Max Mustermann",
+								md:"2,5",
+								start: new Date("2022", "9", "31", "10", "30"),
+								end: new Date("2022", "10", "3", "14", "30"),
+								title: "Расширить класс common.tasks",
 								type: "Type02",
 								tentative: false
 							},
 							{
-								md:"20,5",
-								start: new Date("2022", "09", "11", "10", "0"),
-								end: new Date("2022", "0", "11", "12", "0"),
-								title: "Team meeting",
-								info: "room 1",
+								md:"1,4",
+								start: new Date("2022", "10", "04", "10", "0"),
+								end: new Date("2022", "10", "08", "14", "0"),
+								title: "Оптимизировать SQL-запрос",
+								info: "DB321",
 								type: "Type01",
 								pic: "sap-icon://sap-ui5",
 								tentative: false
 							},
-							{
-								md:"20,5",
-								start: new Date("2022", "0", "12", "11", "30"),
-								end: new Date("2022", "0", "12", "13", "30"),
-								title: "Lunch",
-								info: "canteen",
-								type: "Type03",
-								tentative: true
-							},
-							{
-								md:"20,5",
-								start: new Date("2022", "0", "15", "08", "30"),
-								end: new Date("2022", "0", "15", "09", "30"),
-								title: "Meet Max Mustermann",
-								type: "Type02",
-								tentative: false
-							},
-							{
-								md:"20,5",
-								start: new Date("2022", "0", "15", "10", "0"),
-								end: new Date("2022", "0", "15", "12", "0"),
-								title: "Team meeting",
-								info: "room 1",
-								type: "Type01",
-								pic: "sap-icon://sap-ui5",
-								tentative: false
-							},
-							{
-								md:"20,5",
-								start: new Date("2022", "0", "15", "11", "30"),
-								end: new Date("2022", "0", "15", "13", "30"),
-								title: "Lunch",
-								info: "canteen",
-								type: "Type03",
-								tentative: true
-							},
-							{
-								md:"20,5",
-								start: new Date("2022", "0", "15", "13", "30"),
-								end: new Date("2022", "0", "15", "17", "30"),
-								title: "Discussion with clients",
-								info: "online meeting",
-								type: "Type02",
-								tentative: false
-							},
-							{
-								md:"20,5",
-								start: new Date("2022", "0", "16", "04", "00"),
-								end: new Date("2022", "0", "16", "22", "30"),
-								title: "Discussion of the plan",
-								info: "Online meeting",
-								type: "Type04",
-								tentative: false
-							},
-							{
-								md:"20,5",
-								start: new Date("2022", "0", "18", "08", "30"),
-								end: new Date("2022", "0", "18", "09", "30"),
-								title: "Meeting with the manager",
-								type: "Type02",
-								tentative: false
-							},
-							{
-								md:"20,5",
-								start: new Date("2022", "0", "18", "11", "30"),
-								end: new Date("2022", "0", "18", "13", "30"),
-								title: "Lunch",
-								info: "canteen",
-								type: "Type03",
-								tentative: true
-							},
-							{
-								md:"20,5",
-								start: new Date("2022", "0", "18", "1", "0"),
-								end: new Date("2022", "0", "18", "22", "0"),
-								title: "Team meeting",
-								info: "regular",
-								type: "Type01",
-								pic: "sap-icon://sap-ui5",
-								tentative: false
-							},
-							{
-								md:"20,5",
-								start: new Date("2022", "0", "21", "00", "30"),
-								end: new Date("2022", "0", "21", "23", "30"),
-								title: "New Product",
-								info: "room 105",
-								type: "Type03",
-								tentative: true
-							},
-							{
-								md:"20,5",
-								start: new Date("2022", "0", "25", "11", "30"),
-								end: new Date("2022", "0", "25", "13", "30"),
-								title: "Lunch",
-								type: "Type01",
-								tentative: true
-							},
-							{
-								md:"20,5",
-								start: new Date("2022", "0", "29", "10", "0"),
-								end: new Date("2022", "0", "29", "12", "0"),
-								title: "Team meeting",
-								info: "room 1",
-								type: "Type01",
-								pic: "sap-icon://sap-ui5",
-								tentative: false
-							},
-							{
-								md:"20,5",
-								start: new Date("2022", "0", "30", "08", "30"),
-								end: new Date("2022", "0", "30", "09", "30"),
-								title: "Meet Max Mustermann",
-								type: "Type02",
-								tentative: false
-							},
-							{
-								md:"20,5",
-								start: new Date("2022", "0", "30", "10", "0"),
-								end: new Date("2022", "0", "30", "12", "0"),
-								title: "Team meeting",
-								info: "room 1",
-								type: "Type01",
-								pic: "sap-icon://sap-ui5",
-								tentative: false
-							},
-							{
-								md:"20,5",
-								start: new Date("2022", "0", "30", "11", "30"),
-								end: new Date("2022", "0", "30", "13", "30"),
-								title: "Lunch",
-								type: "Type03",
-								tentative: true
-							},
-							{
-								md:"20,5",
-								start: new Date("2022", "0", "30", "13", "30"),
-								end: new Date("2022", "0", "30", "17", "30"),
-								title: "Discussion with clients",
-								type: "Type02",
-								tentative: false
-							},
-							{
-								md:"20,5",
-								start: new Date("2022", "0", "31", "10", "00"),
-								end: new Date("2022", "0", "31", "11", "30"),
-								title: "Discussion of the plan",
-								info: "Online meeting",
-								type: "Type04",
-								tentative: false
-							},
-							{
-								md:"20,5",
-								start: new Date("2022", "1", "3", "08", "30"),
-								end: new Date("2022", "1", "13", "09", "30"),
-								title: "Meeting with the manager",
-								type: "Type02",
-								tentative: false
-							},
-							{
-								md:"20,5",
-								start: new Date("2022", "1", "4", "10", "0"),
-								end: new Date("2022", "1", "4", "12", "0"),
-								title: "Team meeting",
-								info: "room 1",
-								type: "Type01",
-								pic: "sap-icon://sap-ui5",
-								tentative: false
-							},
-							{
-								md:"20,5",
-								start: new Date("2022", "2", "30", "10", "0"),
-								end: new Date("2022", "4", "33", "12", "0"),
-								title: "Working out of the building",
-								type: "Type07",
-								pic: "sap-icon://sap-ui5",
-								tentative: false
-							}
 						],
 						headers: [
-
-							{
-								md:"20,5",
-								start: new Date("2022", "8", "1", "0", "0"),
-								end: new Date("2022", "10", "30", "23", "59"),
-								title: "New quarter",
-								type: "Type10",
-								tentative: false
-							},
-							{
-								md:"20,5",
-								start: new Date("2018", "1", "1", "0", "0"),
-								end: new Date("2018", "3", "30", "23", "59"),
-								title: "New quarter",
-								type: "Type10",
-								tentative: false
-							}
 						]
 					},
 						{
@@ -247,93 +52,24 @@ sap.ui.define([
 							role: "team member",
 							appointments: [
 								{
-									start: new Date("2022", "0", "10", "18", "00"),
-									end: new Date("2022", "0", "10", "19", "10"),
-									title: "Discussion of the plan",
-									info: "Online meeting",
+									md:"0,9",
+									start: new Date("2022", "9", "31", "12", "00"),
+									end: new Date("2022", "10", "01", "11", "10"),
+									title: "Протестировать модуль \"FormatC\"",
+									info: "Не на своей машине",
 									type: "Type04",
 									tentative: false
 								},
 								{
-									start: new Date("2022", "0", "9", "10", "0"),
-									end: new Date("2022", "0", "13", "12", "0"),
-									title: "Workshop out of the country",
+									md:"2",
+									start: new Date("2022", "10", "2", "10", "0"),
+									end: new Date("2022", "10", "4", "10", "0"),
+									title: "Починить принтер",
+									info: "В учебном классе",
 									type: "Type07",
 									pic: "sap-icon://sap-ui5",
 									tentative: false
 								},
-								{
-									start: new Date("2022", "0", "15", "08", "00"),
-									end: new Date("2022", "0", "15", "09", "30"),
-									title: "Discussion of the plan",
-									info: "Online meeting",
-									type: "Type04",
-									tentative: false
-								},
-								{
-									start: new Date("2022", "0", "15", "10", "0"),
-									end: new Date("2022", "0", "15", "12", "0"),
-									title: "Team meeting",
-									info: "room 1",
-									type: "Type01",
-									pic: "sap-icon://sap-ui5",
-									tentative: false
-								},
-								{
-									start: new Date("2022", "0", "15", "18", "00"),
-									end: new Date("2022", "0", "15", "19", "10"),
-									title: "Discussion of the plan",
-									info: "Online meeting",
-									type: "Type04",
-									tentative: false
-								},
-								{
-									start: new Date("2022", "0", "16", "10", "0"),
-									end: new Date("2022", "0", "31", "12", "0"),
-									title: "Workshop out of the country",
-									type: "Type07",
-									pic: "sap-icon://sap-ui5",
-									tentative: false
-								},
-								{
-									start: new Date("2018", "0", "1", "0", "0"),
-									end: new Date("2018", "2", "31", "23", "59"),
-									title: "New quarter",
-									type: "Type10",
-									tentative: false
-								},
-								{
-									start: new Date("2022", "01", "11", "10", "0"),
-									end: new Date("2022", "02", "20", "12", "0"),
-									title: "Team collaboration",
-									info: "room 1",
-									type: "Type01",
-									pic: "sap-icon://sap-ui5",
-									tentative: false
-								},
-								{
-									start: new Date("2022", "3", "01", "10", "0"),
-									end: new Date("2022", "3", "31", "12", "0"),
-									title: "Workshop out of the country",
-									type: "Type07",
-									pic: "sap-icon://sap-ui5",
-									tentative: false
-								},
-								{
-									start: new Date("2022", "4", "01", "10", "0"),
-									end: new Date("2022", "4", "31", "12", "0"),
-									title: "Out of the office",
-									type: "Type08",
-									tentative: false
-								},
-								{
-									start: new Date("2022", "7", "1", "0", "0"),
-									end: new Date("2022", "7", "31", "23", "59"),
-									title: "Vacation",
-									info: "out of office",
-									type: "Type04",
-									tentative: false
-								}
 							],
 							headers: [
 							]
@@ -344,108 +80,13 @@ sap.ui.define([
 							role: "team member",
 							appointments: [
 								{
-									start: new Date("2022", "0", "15", "08", "30"),
-									end: new Date("2022", "0", "15", "09", "30"),
-									title: "Meet John Miller",
+									md:"0,5",
+									start: new Date("2022", "9", "31", "16", "00"),
+									end: new Date("2022", "10", "1", "12", "00"),
+									title: "Решить вопрос с ФЗ по подписанию",
 									type: "Type02",
 									tentative: false
 								},
-								{
-									start: new Date("2022", "0", "15", "10", "0"),
-									end: new Date("2022", "0", "15", "12", "0"),
-									title: "Team meeting",
-									info: "room 1",
-									type: "Type01",
-									pic: "sap-icon://sap-ui5",
-									tentative: false
-								},
-								{
-									start: new Date("2022", "0", "15", "13", "00"),
-									end: new Date("2022", "0", "15", "16", "00"),
-									title: "Discussion with clients",
-									info: "online",
-									type: "Type02",
-									tentative: false
-								},
-								{
-									start: new Date("2022", "0", "16", "0", "0"),
-									end: new Date("2022", "0", "16", "23", "59"),
-									title: "Vacation",
-									info: "out of office",
-									type: "Type08",
-									tentative: false
-								},
-								{
-									start: new Date("2022", "0", "17", "1", "0"),
-									end: new Date("2022", "0", "18", "22", "0"),
-									title: "Workshop",
-									info: "regular",
-									type: "Type08",
-									pic: "sap-icon://sap-ui5",
-									tentative: false
-								},
-								{
-									start: new Date("2022", "0", "19", "08", "30"),
-									end: new Date("2022", "0", "19", "18", "30"),
-									title: "Meet John Doe",
-									type: "Type08",
-									tentative: false
-								},
-								{
-									start: new Date("2022", "0", "19", "10", "0"),
-									end: new Date("2022", "0", "19", "16", "0"),
-									title: "Team meeting",
-									info: "room 1",
-									type: "Type08",
-									pic: "sap-icon://sap-ui5",
-									tentative: false
-								},
-								{
-									start: new Date("2022", "0", "19", "07", "00"),
-									end: new Date("2022", "0", "19", "17", "30"),
-									title: "Discussion with clients",
-									type: "Type08",
-									tentative: false
-								},
-								{
-									start: new Date("2022", "0", "20", "0", "0"),
-									end: new Date("2022", "0", "20", "23", "59"),
-									title: "Vacation",
-									info: "out of office",
-									type: "Type08",
-									tentative: false
-								},
-								{
-									start: new Date("2022", "0", "22", "07", "00"),
-									end: new Date("2022", "0", "27", "17", "30"),
-									title: "Discussion with clients",
-									info: "out of office",
-									type: "Type08",
-									tentative: false
-								},
-								{
-									start: new Date("2022", "2", "13", "9", "0"),
-									end: new Date("2022", "2", "17", "10", "0"),
-									title: "Payment week",
-									type: "Type08"
-								},
-								{
-									start: new Date("2022", "03", "10", "0", "0"),
-									end: new Date("2022", "05", "16", "23", "59"),
-									title: "Vacation",
-									info: "out of office",
-									type: "Type04",
-									tentative: false
-								},
-								{
-									start: new Date("2022", "07", "1", "0", "0"),
-									end: new Date("2022", "09", "31", "23", "59"),
-									title: "New quarter",
-									type: "Type10",
-									tentative: false
-								}
-							],
-							headers: [
 							]
 						}
 					]
@@ -453,11 +94,11 @@ sap.ui.define([
 				this.getView().setModel(oModel);
 				const taskData = {
 					"tasks":[
-						{"name":"20221028 Задача 1","md":"1,1","mdt":"ч/д","plained":""},
-						{"name":"20221029 Задача 2","md":"10,8","mdt":"ч/д","plained":""},
-						{"name":"20221030 Задача 3","md":"4","mdt":"ч/д","plained":""},
-						{"name":"20221031 Задача 4","md":"5","mdt":"ч/д","plained":"Запланирована!"},
-						{"name":"20221101 Задача 5","md":"2","mdt":"ч/д","plained":""},
+						{"key":0,"name":"Задача 1","md":"1,1","mdt":"ч/д","planned":""},
+						{"key":1,"name":"Задача 2","md":"10,8","mdt":"ч/д","planned":""},
+						{"key":2,"name":"Задача 3","md":"4","mdt":"ч/д","planned":""},
+						{"key":3,"name":"Задача 4","md":"5","mdt":"ч/д","planned":"Запланирована!"},
+						{"key":4,"name":"Задача 5","md":"2","mdt":"ч/д","planned":""},
 						]
 				};
 				this.getView().byId("tasks").setModel(new sap.ui.model.json.JSONModel(taskData));
@@ -502,7 +143,6 @@ sap.ui.define([
 
 			handleAppointmentCreate: function (oEvent) {
 				this._arrangeDialogFragment(this._aDialogTypes[0].type);
-
 				},
 
 			handleAppointmentAddWithContext: function (oEvent) {
@@ -512,19 +152,18 @@ sap.ui.define([
 
 			_validateDateTimePicker: function (oDateTimePickerStart, oDateTimePickerEnd,oMdValue) {
 				var oStartDate = oDateTimePickerStart.getDateValue(),
-					oEndDate = oDateTimePickerEnd.getDateValue(),
+					oEndDate = oDateTimePickerEnd,
 					oMd = oMdValue.getValue(),
 					sValueStateText = "Дата начала должна быть раньше даты окончания";
-
-				if (oStartDate && oEndDate && oEndDate.getTime() <= oStartDate.getTime()) {
-					oDateTimePickerStart.setValueState(ValueState.Error);
-					oDateTimePickerEnd.setValueState(ValueState.Error);
-					oDateTimePickerStart.setValueStateText(sValueStateText);
-					oDateTimePickerEnd.setValueStateText(sValueStateText);
-				} else {
+				// if (oStartDate && oEndDate && oEndDate.getTime() <= oStartDate.getTime()) {
+				// 	oDateTimePickerStart.setValueState(ValueState.Error);
+				// 	oDateTimePickerEnd.setValueState(ValueState.Error);
+				// 	oDateTimePickerStart.setValueStateText(sValueStateText);
+				// 	oDateTimePickerEnd.setValueStateText(sValueStateText);
+				// } else {
 					oDateTimePickerStart.setValueState(ValueState.None);
 					oDateTimePickerEnd.setValueState(ValueState.None);
-				}
+//				}
 			},
 
 			updateButtonEnabledState: function (oDialog) {
@@ -539,10 +178,12 @@ sap.ui.define([
 			},
 
 			handleCreateChange: function (oEvent) {
+
 				var oDateTimePickerStart = this.byId("startDate"),
 					oDateTimePickerEnd = this.byId("endDate"),
 					oMd = this.byId("md");
-
+				oDateTimePickerEnd = oDateTimePickerStart+1
+console.log(oDateTimePickerEnd)
 				if (oEvent.getParameter("valid")) {
 					this._validateDateTimePicker(oDateTimePickerStart, oDateTimePickerEnd,oMd);
 				} else {
@@ -621,7 +262,8 @@ sap.ui.define([
 					this._setCreateWithContextAppointmentDialogContent();
 					sTempTitle = this._aDialogTypes[1].title;
 				} else if (sDialogType === "create_appointment"){
-					this._setCreateAppointmentDialogContent();
+					if (!this._setCreateAppointmentDialogContent())
+						return;
 					sTempTitle = this._aDialogTypes[0].title;
 				} else {
 					Log.error("Wrong dialog type.");
@@ -730,6 +372,16 @@ sap.ui.define([
 			},
 
 			_setCreateAppointmentDialogContent: function(){
+				if (this.getView().byId("tasks").getSelectedItemId()===''){
+					MessageToast.show("Нужно, все-таки, выбрать задачу из списка!");
+					return false;
+				}
+				const idx =this.getView().byId("tasks").getSelectedKey();
+				if (this.getView().byId("tasks").getModel().oData.tasks[idx].planned!==''){
+					MessageToast.show("Увы, задача уже запланирована!");
+					return false;
+				}
+				const aTask = this.getView().byId("tasks").getModel().oData.tasks[idx];
 				var oAppointmentType = this.byId("isIntervalAppointment"),
 					oDateTimePickerStart = this.byId("startDate"),
 					oDateTimePickerEnd =  this.byId("endDate"),
@@ -748,6 +400,12 @@ sap.ui.define([
 				oMoreInfoInput.setValue("");
 				oMdInput.setValue("");
 				oAppointmentType.setSelected(false);
+
+				if (aTask){
+					oMdInput.setValue(aTask.md);
+					oTitleInput.setValue(aTask.name);
+				}
+				return true;
 			},
 
 			_setCreateWithContextAppointmentDialogContent: function(){
